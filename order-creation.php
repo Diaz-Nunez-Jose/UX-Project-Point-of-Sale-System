@@ -163,7 +163,7 @@
                 <div>
                     <form id="drinks" method="post" action="order-creation.php">
                         <input type="hidden" name="drinks">
-                        <button type="submit" form="drinks" class="menu-categories-button-drinks"
+                        <button id="drinks" type="submit" form="drinks" class="menu-categories-button-drinks"
                         value="Drinks" onmousedown="handleStyleDown(this);" onmouseup="handleStyleUp(this);">
                                 Drinks
                         </button>
@@ -172,7 +172,7 @@
                 <div>
                     <form id="appetizers" method="post" action="order-creation.php">
                         <input type="hidden" name="appetizers">
-                        <button type="submit" form="appetizers" class="menu-categories-button-appetizers"
+                        <button id="apps" type="submit" form="appetizers" class="menu-categories-button-appetizers"
                         value="Apps" onmousedown="handleStyleDown(this);" onmouseup="handleStyleUp(this);">
                                 Appetizers
                         </button>
@@ -181,7 +181,7 @@
                 <div>
                     <form id="entrees" method="post" action="order-creation.php">
                         <input type="hidden" name="entrees">
-                        <button type="submit" form="entrees" class="menu-categories-button-entrees"
+                        <button id="entrees" type="submit" form="entrees" class="menu-categories-button-entrees"
                         value="Entrees" onmousedown="handleStyleDown(this);" onmouseup="handleStyleUp(this);">
                                 Entrees
                         </button>
@@ -190,7 +190,7 @@
                 <div>
                     <form id="desserts" method="post" action="order-creation.php">
                         <input type="hidden" name="desserts">
-                        <button type="submit" form="desserts" class="menu-categories-button-desserts"
+                        <button id="desserts" type="submit" form="desserts" class="menu-categories-button-desserts"
                         value="Desserts" onmousedown="handleStyleDown(this);" onmouseup="handleStyleUp(this);">
                                 Desserts
                         </button>
@@ -199,7 +199,7 @@
                 <div>
                     <form id="sides" method="post" action="order-creation.php">
                         <input type="hidden" name="sides">
-                        <button type="submit" form="sides" class="menu-categories-button-sides-and-takeout"
+                        <button id="sides" type="submit" form="sides" class="menu-categories-button-sides-and-takeout"
                         value="Sides" onmousedown="handleStyleDown(this);" onmouseup="handleStyleUp(this);">
                                 Sides &amp; Takeout
                         </button>
@@ -208,7 +208,7 @@
                 <div>
                     <form id="promos" method="post" action="order-creation.php">
                         <input type="hidden" name="promos">
-                        <button type="submit" form="promos" class="menu-categories-button-promos-and-specials"
+                        <button id="promos" type="submit" form="promos" class="menu-categories-button-promos-and-specials"
                         value="Promos" onmousedown="handleStyleDown(this);" onmouseup="handleStyleUp(this);">
                                 Promos &amp; Specials
                         </button>
@@ -219,7 +219,8 @@
         <div class="footer">
             <div class="order-management">
                 <div>
-                    <button class="order-management-button-send-stay" onclick="alert('SENDING ITEM(S)...');" value="SendStay" onmousedown="handleStyleDown(this);" onmouseup="handleStyleUp(this);">
+                    <button class="order-management-button-send-stay" onclick="alert('SENDING ITEM(S)...');" value="SendStay" 
+                    onmousedown="handleStyleDown(this);" onmouseup="handleStyleUp(this);">
                         Send &amp; Stay
                     </button>
                 </div>
@@ -231,18 +232,21 @@
                 <div>
                     <form id="delete" method="post" action="order-creation.php">
                         <input type="hidden" name="delete">
-                        <button type="submit" form="delete" class="order-management-button-delete" value="Delete Last" onmousedown="handleStyleDown(this);" onmouseup="handleStyleUp(this);">
+                        <button type="submit" form="delete" class="order-management-button-delete" value="Delete Last" 
+                        onmousedown="handleStyleDown(this);" onmouseup="handleStyleUp(this);">
                                 Delete Last
                         </button>
                     </form>            
                 </div>
                 <div>
-                    <button class="order-management-button-finish" onclick="alert('PRINTING ORDER...');" value="Print Order" onmousedown="handleStyleDown(this);" onmouseup="handleStyleUp(this);">
+                    <button class="order-management-button-finish" onclick="alert('PRINTING ORDER...');" value="Print Order" 
+                    onmousedown="handleStyleDown(this);" onmouseup="handleStyleUp(this);">
                         Print Order
                     </button>
                 </div>
                 <div>
-                    <button class="order-management-button-exit" onclick="alert('EXITING...');logOut();" value="Exit" onmousedown="handleStyleDown(this);" onmouseup="handleStyleUp(this);">
+                    <button class="order-management-button-exit" onclick="alert('EXITING...');logOut();" value="Exit" 
+                    onmousedown="handleStyleDown(this);" onmouseup="handleStyleUp(this);">
                         Exit
                     </button>
                 </div>
@@ -251,6 +255,29 @@
     </div>    
     <script type="text/javascript">
         var currentCategory = <?php echo $_SESSION["category"]; ?>;
+
+        /*        
+            $_SESSION["category"] = "Drinks";
+        } else if (isset($_POST["appetizers"])) {
+            $_SESSION["category"] = "Appetizers";
+        } else if (isset($_POST["entrees"])) {
+            $_SESSION["category"] = "Entrees";
+        } else if (isset($_POST["desserts"])) {
+            $_SESSION["category"] = "Desserts";
+        } else if (isset($_POST["sides"])) {
+            $_SESSION["category"] = "Sides";
+        } else if (isset($_POST["promos"])) {
+            $_SESSION["category"] = "Promos";
+        */
+
+        if(currentCategory == "Drinks") {
+            handleStyleDown(document.getElementById("apps"));
+            handleStyleDown(document.getElementById("entrees"));
+            handleStyleDown(document.getElementById("desserts"));
+            handleStyleDown(document.getElementById("sides"));
+            handleStyleDown(document.getElementById("promos"));
+        }
+
     </script>
 </body>
 </html>
