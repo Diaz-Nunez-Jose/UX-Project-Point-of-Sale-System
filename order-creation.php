@@ -256,7 +256,7 @@
     <script type="text/javascript">
         function loadButtonStyles() {
             var currentCategory = "<?php echo $_SESSION["category"]; ?>";
-            console.log('currentCategory');   
+            console.log(currentCategory);   
 
             /*        
                 $_SESSION["category"] = "Drinks";
