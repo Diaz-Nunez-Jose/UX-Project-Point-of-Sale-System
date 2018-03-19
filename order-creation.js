@@ -62,3 +62,29 @@ function handleStyleUp(element) {
 		return;		
 	}
 }
+
+function styleMenuButtons() {
+    var currentCategory = <?php echo $_SESSION["category"]; ?>;
+
+    /*        
+        $_SESSION["category"] = "Drinks";
+    } else if (isset($_POST["appetizers"])) {
+        $_SESSION["category"] = "Appetizers";
+    } else if (isset($_POST["entrees"])) {
+        $_SESSION["category"] = "Entrees";
+    } else if (isset($_POST["desserts"])) {
+        $_SESSION["category"] = "Desserts";
+    } else if (isset($_POST["sides"])) {
+        $_SESSION["category"] = "Sides";
+    } else if (isset($_POST["promos"])) {
+        $_SESSION["category"] = "Promos";
+    */
+
+    if(currentCategory == "Drinks") {
+        handleStyleDown(document.getElementById("apps"));
+        handleStyleDown(document.getElementById("entrees"));
+        handleStyleDown(document.getElementById("desserts"));
+        handleStyleDown(document.getElementById("sides"));
+        handleStyleDown(document.getElementById("promos"));
+    }
+}
