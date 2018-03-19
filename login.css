@@ -1,0 +1,189 @@
+.wrapper {
+    background-color: grey;
+}
+
+.centered-column {
+    /* background-color: red; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 33%;
+    right: 33%;
+}
+
+.logo {
+    /* background-color: blue; */
+    position: absolute;
+    top: 2.5%;
+    height: 12%;
+    width: 100%;
+}
+
+.logo-img {
+    float: left;
+}
+
+.logo-text {
+    float: right;
+    font-family: Harrington;
+    font-size: 325%;
+}
+
+.instructions {
+    /* background-color: green; */
+    position: absolute;
+    top: 17%;
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    /* font-family: Bahnschrift Light; */
+    font-family: Poppins;
+    /* font-weight: bold; */
+    text-transform: uppercase;
+    font-size: 3em;
+    padding-top: 3%;
+    border-top: 0.5px solid gray;
+}
+
+.keypad-wrapper {
+    /* background-color: yellow; */
+    position: absolute;
+    top: 29.5%;
+    bottom: 2.5%;
+    width: 100%;
+}
+
+.keypad-frame {
+    /*background-color: orange;*/
+    /* background: rgb(245, 179, 152); */
+    /* background-color: orange; */
+    background: rgb(233, 233, 233);
+    position: absolute;
+    top: 1%;
+    bottom: 1%;
+    left: 15%;
+    right: 15%;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+}
+
+.output {
+    background-color: white;
+    position: absolute;
+    top: 5%;
+    bottom: 75%;
+    left: 8%;
+    right: 8%;
+    border: 1px solid rgba(0, 0, 0, 0.692);
+    /* vertical-align: middle; */
+    /* vertical-align: 50px; */
+}
+
+.pin {
+    float: right;
+    vertical-align: 50px;
+    font-family: Poppins;
+    font-size: 400%;
+    padding-right: 5%;
+}
+
+.input {
+    /* background-color: cyan; */
+    position: absolute;
+    top: 30%;
+    bottom: 5%;
+    left: 8%;
+    right: 8%;
+}
+
+.keys {
+    /* border: 1px solid black; */
+}
+
+table {
+    width: 100%;
+    height: 100%;
+}
+
+table, th, td {
+   /* border: 1px solid black; */
+   text-align: center;
+}
+
+.number-button {
+    background-color: #ffffff;
+    height: 80%;
+    width: 65%;
+    border-radius: 50%;
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: 250%;
+    font-family: Poppins;
+}
+
+.number-button-arrow {
+    background-color: #ffffff;
+    height: 80%;
+    width: 65%;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: 250%;
+    /* font-family: Poppins; */
+}
+
+.submit {
+    background-color: green;
+    position: absolute;
+    top: 40%;
+    left: 67%;
+    width: 11%;
+    height: 15%;
+    /* border-radius: 25px 0 25px 0; */
+    border-radius: 10px;
+}
+
+.submit-button {    
+    background-color: #4CAF50;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    /* font-size: 16px; */
+    font-family: Calibri;
+    font-size: 130%;
+    text-transform: uppercase;
+    /* border-radius: 25px 0 25px 0; */
+    border-radius: 10px;
+}
+
+.clear {
+    background-color: red;
+    position: absolute;
+    top: 66%;
+    left: 67%;
+    width: 11%;
+    height: 15%;
+    /* border-radius: 25px 0 25px 0; */
+    border-radius: 10px;
+}
+
+.clear-button {    
+    background-color: #f44336;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    /* font-size: 16px; */
+    font-family: Calibri;
+    font-size: 130%;
+    text-transform: uppercase;
+    /* border-radius: 25px 0 25px 0; */
+    border-radius: 10px;
+}
