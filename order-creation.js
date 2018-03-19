@@ -11,6 +11,15 @@ function handleStyleDown(element) {
 	return;
 }
 
+function handleStyleDownAll(element) {
+	console.log(element);
+	var originalColor = element.style.color;
+	element.style.color = "#ffffff";
+	element.style.backgroundColor = "#e7e7e7";
+	// element.style.backgroundColor = originalColor;
+	return;
+}
+
 function handleStyleUp(element) {	
 	if (element.value == "Delete Last") {
 		element.style.color = "#ffffff";

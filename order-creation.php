@@ -281,19 +281,19 @@ promos
 
             if(currentCategory == "Drinks") {
                 console.log('Drinks os the cat');
-                handleStyleDown(document.getElementById("apps"));
+                handleStyleDownAll(document.getElementById("apps"));
                 console.log('Just called handle on apps');
                 console.log('calling handle on entrees');
-                handleStyleDown(document.getElementById("entrees"));
+                handleStyleDownAll(document.getElementById("entrees"));
                 console.log('Just called handle on entrees');
                 console.log('calling handle on desserts');
-                handleStyleDown(document.getElementById("desserts"));
+                handleStyleDownAll(document.getElementById("desserts"));
                 console.log('Just called handle on desserts');
                 console.log('calling handle on sides');
-                handleStyleDown(document.getElementById("sides"));
+                handleStyleDownAll(document.getElementById("sides"));
                 console.log('Just called handle on sides');
                 console.log('calling handle on promos');
-                handleStyleDown(document.getElementById("promos"));
+                handleStyleDownAll(document.getElementById("promos"));
                 console.log('Just called handle on promos');
             }
         }
