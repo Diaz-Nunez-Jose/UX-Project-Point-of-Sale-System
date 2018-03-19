@@ -85,7 +85,7 @@
             <div class="order-summary">
                 <div class="order-header">
                     <div class="logo-img">
-                        <img src="./images/logo.png" alt="The Daily Catch Logo" height="20" width="20">
+                        <img src="images/logo.PNG" alt="The Daily Catch Logo" height="20" width="20">
                     </div>
                     <div class="logo-text">
                         The Daily Catch
