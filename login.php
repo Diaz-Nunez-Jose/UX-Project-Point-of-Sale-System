@@ -20,7 +20,7 @@
         <div class="centered-column">
             <div class="logo"> 
                 <div class="logo-img">
-                    <img src="./images/logo.png" alt="The Daily Catch Logo" height="75" width="75">
+                    <img src="images/logo.PNG" alt="The Daily Catch Logo" height="75" width="75">
                 </div>
                 <div class="logo-text">
                     The Daily Catch
