@@ -325,7 +325,7 @@
                 handleStyleDownAll(document.getElementById("drinksBtn"));
                 console.log('Just called handle on entrees');
                 console.log('calling handle on desserts');
-                handleStyleDownAll(document.getElementById("dessertsBtn"));
+                handleStyleDownAll(document.getElementById("entreesBtn"));
                 console.log('Just called handle on desserts');
                 console.log('calling handle on sides');
                 handleStyleDownAll(document.getElementById("sidesBtn"));
