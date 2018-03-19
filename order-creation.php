@@ -257,85 +257,35 @@
                 handleStyleDownAll(document.getElementById("sidesBtn"));
                 handleStyleDownAll(document.getElementById("promosBtn"));
             } else if(currentCategory == "Appetizers") {
-                console.log('Drinks os the cat');
                 handleStyleDownAll(document.getElementById("drinksBtn"));
-                console.log('Just called handle on apps');
-                console.log('calling handle on entrees');
                 handleStyleDownAll(document.getElementById("entreesBtn"));
-                console.log('Just called handle on entrees');
-                console.log('calling handle on desserts');
                 handleStyleDownAll(document.getElementById("dessertsBtn"));
-                console.log('Just called handle on desserts');
-                console.log('calling handle on sides');
                 handleStyleDownAll(document.getElementById("sidesBtn"));
-                console.log('Just called handle on sides');
-                console.log('calling handle on promos');
                 handleStyleDownAll(document.getElementById("promosBtn"));
-                console.log('Just called handle on promos');
             } else if(currentCategory == "Entrees") {
-                console.log('Drinks os the cat');
                 handleStyleDownAll(document.getElementById("appsBtn"));
-                console.log('Just called handle on apps');
-                console.log('calling handle on entrees');
                 handleStyleDownAll(document.getElementById("drinksBtn"));
-                console.log('Just called handle on entrees');
-                console.log('calling handle on desserts');
                 handleStyleDownAll(document.getElementById("dessertsBtn"));
-                console.log('Just called handle on desserts');
-                console.log('calling handle on sides');
                 handleStyleDownAll(document.getElementById("sidesBtn"));
-                console.log('Just called handle on sides');
-                console.log('calling handle on promos');
                 handleStyleDownAll(document.getElementById("promosBtn"));
-                console.log('Just called handle on promos');
             } else if(currentCategory == "Desserts") {
-                console.log('Drinks os the cat');
                 handleStyleDownAll(document.getElementById("appsBtn"));
-                console.log('Just called handle on apps');
-                console.log('calling handle on entrees');
                 handleStyleDownAll(document.getElementById("drinksBtn"));
-                console.log('Just called handle on entrees');
-                console.log('calling handle on desserts');
                 handleStyleDownAll(document.getElementById("entreesBtn"));
-                console.log('Just called handle on desserts');
-                console.log('calling handle on sides');
                 handleStyleDownAll(document.getElementById("sidesBtn"));
-                console.log('Just called handle on sides');
-                console.log('calling handle on promos');
                 handleStyleDownAll(document.getElementById("promosBtn"));
-                console.log('Just called handle on promos');
             } else if(currentCategory == "Sides") {
-                console.log('Drinks os the cat');
                 handleStyleDownAll(document.getElementById("appsBtn"));
-                console.log('Just called handle on apps');
-                console.log('calling handle on entrees');
                 handleStyleDownAll(document.getElementById("entreesBtn"));
-                console.log('Just called handle on entrees');
-                console.log('calling handle on desserts');
                 handleStyleDownAll(document.getElementById("dessertsBtn"));
-                console.log('Just called handle on desserts');
-                console.log('calling handle on sides');
                 handleStyleDownAll(document.getElementById("drinksBtn"));
-                console.log('Just called handle on sides');
-                console.log('calling handle on promos');
                 handleStyleDownAll(document.getElementById("promosBtn"));
-                console.log('Just called handle on promos');
             } else if(currentCategory == "Promos") {
-                console.log('Drinks os the cat');
                 handleStyleDownAll(document.getElementById("appsBtn"));
-                console.log('Just called handle on apps');
-                console.log('calling handle on entrees');
                 handleStyleDownAll(document.getElementById("entreesBtn"));
-                console.log('Just called handle on entrees');
-                console.log('calling handle on desserts');
                 handleStyleDownAll(document.getElementById("dessertsBtn"));
-                console.log('Just called handle on desserts');
-                console.log('calling handle on sides');
                 handleStyleDownAll(document.getElementById("sidesBtn"));
-                console.log('Just called handle on sides');
-                console.log('calling handle on promos');
                 handleStyleDownAll(document.getElementById("drinksBtn"));
-                console.log('Just called handle on promos');
             }
         }
     </script>
