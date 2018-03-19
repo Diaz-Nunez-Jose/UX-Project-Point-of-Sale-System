@@ -1,6 +1,6 @@
 <?php
     session_start();
-    // session_destroy();
+    
     require "get-db.php";
     $db = getDb();
 
@@ -17,7 +17,6 @@
         }
 
         $_SESSION["first-visit"] = false;
-        // $_SESSION["category"] = "";
 
         if (isset($_POST["drinks"])) {
             $_SESSION["category"] = "Drinks";
@@ -32,10 +31,8 @@
         } else if (isset($_POST["promos"])) {
             $_SESSION["category"] = "Promos";
         }
-        // $category = $_SESSION["category"];
-    } else {
+    } else
         $_SESSION["first-visit"] = true;
-    }
 ?>
 
 <!DOCTYPE html>
@@ -70,16 +67,12 @@
             $_SESSION["order"][$id]["item"] = $item;
             $_SESSION["order"][$id]["price"] = $price;
             $_SESSION["order"][$id]["quantity"] = 1;
-        } else {
-            // $_SESSION["order"][$id]["item"] = $item;
-            // $_SESSION["order"][$id]["price"] = $price;
+        } else
             $_SESSION["order"][$id]["quantity"] += 1;
-        }
 
         echo "<script type='text/javascript'>location.hash = '#' + $id;</script>";
     }
  ?>
-
     <div class="wrapper">
         <div class="main">
             <div class="order-summary">
