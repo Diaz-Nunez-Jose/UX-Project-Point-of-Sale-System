@@ -270,14 +270,31 @@
                 $_SESSION["category"] = "Sides";
             } else if (isset($_POST["promos"])) {
                 $_SESSION["category"] = "Promos";
+
+drink
+apps
+entrees
+desserts
+sides
+promos
             */
 
             if(currentCategory == "Drinks") {
+                console.log('Drinks os the cat');
                 handleStyleDown(document.getElementById("apps"));
+                console.log('Just called handle on apps');
+                console.log('calling handle on entrees');
                 handleStyleDown(document.getElementById("entrees"));
+                console.log('Just called handle on entrees');
+                console.log('calling handle on desserts');
                 handleStyleDown(document.getElementById("desserts"));
+                console.log('Just called handle on desserts');
+                console.log('calling handle on sides');
                 handleStyleDown(document.getElementById("sides"));
+                console.log('Just called handle on sides');
+                console.log('calling handle on promos');
                 handleStyleDown(document.getElementById("promos"));
+                console.log('Just called handle on promos');
             }
         }
     </script>
