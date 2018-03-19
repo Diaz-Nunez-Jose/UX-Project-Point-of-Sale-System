@@ -3,6 +3,7 @@ function logOut() {
 }
 
 function handleStyleDown(element) {
+	console.log(element);
 	var originalColor = element.style.color;
 	element.style.color = "#ffffff";
 	element.style.backgroundColor = "#e7e7e7";
