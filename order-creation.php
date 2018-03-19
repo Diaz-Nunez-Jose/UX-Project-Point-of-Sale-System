@@ -249,5 +249,8 @@
             </div>
         </div>
     </div>    
+    <script type="text/javascript">
+        var currentCategory = <?php echo $_SESSION["category"]; ?>;
+    </script>
 </body>
 </html>

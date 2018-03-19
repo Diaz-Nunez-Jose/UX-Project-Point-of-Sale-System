@@ -111,13 +111,15 @@
             </div>       
         </div>
         <div class="submit">                                 
-            <button class="submit-button" value="Submit" onclick="validateInput();" onmousedown="handleStyleDown(this);" onmouseup="handleStyleUp(this);">
+            <button class="submit-button" value="Submit" onclick="validateInput();" 
+            onmousedown="handleStyleDown(this);" onmouseup="handleStyleUp(this);">
                 Submit
             </button>
         </div>
 
         <div class="clear">                             
-            <button class="clear-button" value="Clear" onclick="clearInput();" onmousedown="handleStyleDown(this);" onmouseup="handleStyleUp(this);">
+            <button class="clear-button" value="Clear" onclick="clearInput();" 
+            onmousedown="handleStyleDown(this);" onmouseup="handleStyleUp(this);">
                 Clear
             </button>
         </div>     
