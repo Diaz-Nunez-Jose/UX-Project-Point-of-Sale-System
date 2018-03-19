@@ -272,13 +272,13 @@
                 $_SESSION["category"] = "Promos";
             */
 
-            // if(currentCategory == "Drinks") {
-            //     handleStyleDown(document.getElementById("apps"));
-            //     handleStyleDown(document.getElementById("entrees"));
-            //     handleStyleDown(document.getElementById("desserts"));
-            //     handleStyleDown(document.getElementById("sides"));
-            //     handleStyleDown(document.getElementById("promos"));
-            // }
+            if(currentCategory == "Drinks") {
+                handleStyleDown(document.getElementById("apps"));
+                handleStyleDown(document.getElementById("entrees"));
+                handleStyleDown(document.getElementById("desserts"));
+                handleStyleDown(document.getElementById("sides"));
+                handleStyleDown(document.getElementById("promos"));
+            }
         }
     </script>
 </body>
