@@ -163,7 +163,7 @@
                 <div>
                     <form id="drinks" method="post" action="order-creation.php">
                         <input type="hidden" name="drinks">
-                        <button id="drinks" type="submit" form="drinks" class="menu-categories-button-drinks"
+                        <button id="drinksBtn" type="submit" form="drinks" class="menu-categories-button-drinks"
                         value="Drinks" onmousedown="handleStyleDown(this);" onmouseup="handleStyleUp(this);">
                                 Drinks
                         </button>
@@ -172,7 +172,7 @@
                 <div>
                     <form id="appetizers" method="post" action="order-creation.php">
                         <input type="hidden" name="appetizers">
-                        <button id="apps" type="submit" form="appetizers" class="menu-categories-button-appetizers"
+                        <button id="appsBtn" type="submit" form="appetizers" class="menu-categories-button-appetizers"
                         value="Apps" onmousedown="handleStyleDown(this);" onmouseup="handleStyleUp(this);">
                                 Appetizers
                         </button>
@@ -181,7 +181,7 @@
                 <div>
                     <form id="entrees" method="post" action="order-creation.php">
                         <input type="hidden" name="entrees">
-                        <button id="entrees" type="submit" form="entrees" class="menu-categories-button-entrees"
+                        <button id="entreesBtn" type="submit" form="entrees" class="menu-categories-button-entrees"
                         value="Entrees" onmousedown="handleStyleDown(this);" onmouseup="handleStyleUp(this);">
                                 Entrees
                         </button>
@@ -190,7 +190,7 @@
                 <div>
                     <form id="desserts" method="post" action="order-creation.php">
                         <input type="hidden" name="desserts">
-                        <button id="desserts" type="submit" form="desserts" class="menu-categories-button-desserts"
+                        <button id="dessertsBtn" type="submit" form="desserts" class="menu-categories-button-desserts"
                         value="Desserts" onmousedown="handleStyleDown(this);" onmouseup="handleStyleUp(this);">
                                 Desserts
                         </button>
@@ -199,7 +199,7 @@
                 <div>
                     <form id="sides" method="post" action="order-creation.php">
                         <input type="hidden" name="sides">
-                        <button id="sides" type="submit" form="sides" class="menu-categories-button-sides-and-takeout"
+                        <button id="sidesBtn" type="submit" form="sides" class="menu-categories-button-sides-and-takeout"
                         value="Sides" onmousedown="handleStyleDown(this);" onmouseup="handleStyleUp(this);">
                                 Sides &amp; Takeout
                         </button>
@@ -208,7 +208,7 @@
                 <div>
                     <form id="promos" method="post" action="order-creation.php">
                         <input type="hidden" name="promos">
-                        <button id="promos" type="submit" form="promos" class="menu-categories-button-promos-and-specials"
+                        <button id="promosBtn" type="submit" form="promos" class="menu-categories-button-promos-and-specials"
                         value="Promos" onmousedown="handleStyleDown(this);" onmouseup="handleStyleUp(this);">
                                 Promos &amp; Specials
                         </button>
@@ -281,19 +281,19 @@ promos
 
             if(currentCategory == "Drinks") {
                 console.log('Drinks os the cat');
-                handleStyleDownAll(document.getElementById("apps"));
+                handleStyleDownAll(document.getElementById("appsBtn"));
                 console.log('Just called handle on apps');
                 console.log('calling handle on entrees');
-                handleStyleDownAll(document.getElementById("entrees"));
+                handleStyleDownAll(document.getElementById("entreesBtn"));
                 console.log('Just called handle on entrees');
                 console.log('calling handle on desserts');
-                handleStyleDownAll(document.getElementById("desserts"));
+                handleStyleDownAll(document.getElementById("dessertsBtn"));
                 console.log('Just called handle on desserts');
                 console.log('calling handle on sides');
-                handleStyleDownAll(document.getElementById("sides"));
+                handleStyleDownAll(document.getElementById("sidesBtn"));
                 console.log('Just called handle on sides');
                 console.log('calling handle on promos');
-                handleStyleDownAll(document.getElementById("promos"));
+                handleStyleDownAll(document.getElementById("promosBtn"));
                 console.log('Just called handle on promos');
             }
         }
