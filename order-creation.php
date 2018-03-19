@@ -255,7 +255,7 @@
     </div>    
     <script type="text/javascript">
         function loadButtonStyles() {
-            var currentCategory = <?php echo $_SESSION["category"]; ?>;
+            var currentCategory = "<?php echo $_SESSION["category"]; ?>";
             console.log('currentCategory');   
 
             /*        
