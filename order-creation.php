@@ -256,7 +256,7 @@
                 handleStyleDownAll(document.getElementById("dessertsBtn"));
                 handleStyleDownAll(document.getElementById("sidesBtn"));
                 handleStyleDownAll(document.getElementById("promosBtn"));
-                
+
                 handleStyleUp(document.getElementById("drinksBtn"));
             } else if(currentCategory == "Appetizers") {
                 handleStyleDownAll(document.getElementById("drinksBtn"));
@@ -264,30 +264,40 @@
                 handleStyleDownAll(document.getElementById("dessertsBtn"));
                 handleStyleDownAll(document.getElementById("sidesBtn"));
                 handleStyleDownAll(document.getElementById("promosBtn"));
+                
+                handleStyleUp(document.getElementById("appsBtn"));
             } else if(currentCategory == "Entrees") {
                 handleStyleDownAll(document.getElementById("appsBtn"));
                 handleStyleDownAll(document.getElementById("drinksBtn"));
                 handleStyleDownAll(document.getElementById("dessertsBtn"));
                 handleStyleDownAll(document.getElementById("sidesBtn"));
                 handleStyleDownAll(document.getElementById("promosBtn"));
+                
+                handleStyleUp(document.getElementById("entreesBtn"));
             } else if(currentCategory == "Desserts") {
                 handleStyleDownAll(document.getElementById("appsBtn"));
                 handleStyleDownAll(document.getElementById("drinksBtn"));
                 handleStyleDownAll(document.getElementById("entreesBtn"));
                 handleStyleDownAll(document.getElementById("sidesBtn"));
                 handleStyleDownAll(document.getElementById("promosBtn"));
+                
+                handleStyleUp(document.getElementById("dessertsBtn"));
             } else if(currentCategory == "Sides") {
                 handleStyleDownAll(document.getElementById("appsBtn"));
                 handleStyleDownAll(document.getElementById("entreesBtn"));
                 handleStyleDownAll(document.getElementById("dessertsBtn"));
                 handleStyleDownAll(document.getElementById("drinksBtn"));
                 handleStyleDownAll(document.getElementById("promosBtn"));
+                
+                handleStyleUp(document.getElementById("sidesBtn"));
             } else if(currentCategory == "Promos") {
                 handleStyleDownAll(document.getElementById("appsBtn"));
                 handleStyleDownAll(document.getElementById("entreesBtn"));
                 handleStyleDownAll(document.getElementById("dessertsBtn"));
                 handleStyleDownAll(document.getElementById("sidesBtn"));
                 handleStyleDownAll(document.getElementById("drinksBtn"));
+                
+                handleStyleUp(document.getElementById("promosBtn"));
             }
         }
     </script>
