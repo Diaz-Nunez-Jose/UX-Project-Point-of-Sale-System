@@ -256,6 +256,8 @@
                 handleStyleDownAll(document.getElementById("dessertsBtn"));
                 handleStyleDownAll(document.getElementById("sidesBtn"));
                 handleStyleDownAll(document.getElementById("promosBtn"));
+                
+                handleStyleUp(document.getElementById("drinksBtn"));
             } else if(currentCategory == "Appetizers") {
                 handleStyleDownAll(document.getElementById("drinksBtn"));
                 handleStyleDownAll(document.getElementById("entreesBtn"));
